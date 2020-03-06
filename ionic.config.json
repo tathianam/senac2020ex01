@@ -1,0 +1,7 @@
+{
+  "name": "dia04",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
