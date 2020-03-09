@@ -40,21 +40,19 @@
 
   <ion-list>
     <button ion-item *ngFor="let artigo of artigos">
-      <ion-card>
+      <ion-item>
+        <ion-avatar slot="start">
+          <img [src]="artigo.imgUrl">
+        </ion-avatar>
+        <ion-label>
+          <h3>{{ artigo.data }}</h3>
+          <div class="ion-text-wrap">
+          <h2>{{ artigo.titulo }}</h2>
+        </div>
+        </ion-label>
 
-        <ion-card-header>
-          <ion-card-subtitle> {{ artigo.data }} </ion-card-subtitle>
-          <ion-card-title>{{ artigo.titulo }}</ion-card-title>
-        </ion-card-header>
+      </ion-item>
 
-        <img [src]="artigo.imgUrl">
-        <ion-card-content>
-          <div [innerHTML]="artigo.texto"></div>
-          <br><br>
-          <ion-card-subtitle>{{ artigo.autor }}</ion-card-subtitle>  
-        </ion-card-content>
-        
-      </ion-card>
     </button>
   </ion-list>
 

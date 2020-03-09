@@ -9,7 +9,7 @@ import { Artigo } from '../model/artigo';
 })
 export class HomePage {
 
-  artigos: Artigo[]=[];
+  artigos: Artigo[] = [];
 
   constructor(private serviceArtigo: ArtigoService) {
     this.artigos = this.serviceArtigo.getAll();
@@ -20,6 +20,6 @@ export class HomePage {
 
   // ionViewDidEnter(){}
 
-  
-  
+
+
 }
