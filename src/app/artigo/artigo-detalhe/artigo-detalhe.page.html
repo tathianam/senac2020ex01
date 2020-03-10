@@ -12,7 +12,7 @@
           <ion-card-title>{{ artigo.titulo }}</ion-card-title>
         </ion-card-header>
 
-        <img [src]="artigo.imgUrl">
+        <div class="ion-text-center"><img [src]="artigo.imgUrl" width="95%"></div>
         <ion-card-content>
           <div [innerHTML]="artigo.texto"></div>
           <br><br>

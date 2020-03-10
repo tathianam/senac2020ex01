@@ -39,7 +39,7 @@
 
 
   <ion-list>
-    <button ion-item *ngFor="let artigo of artigos">
+    <button ion-item *ngFor="let artigo of artigos" (click)="abrirArtigo(artigo)">
       <ion-item>
         <ion-avatar slot="start">
           <img [src]="artigo.imgUrl">
