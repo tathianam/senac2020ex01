@@ -10,7 +10,7 @@ export class ArtigoService {
 
   artigos: Artigo[] = [
     { id: 1, 
-      titulo:'Como tirar fotos com Ionic de maneira simples', 
+      titulo:'1-Como tirar fotos com Ionic de maneira simples', 
       autor:'FELIPE FRANCO', 
       data:'20/02/2018', 
       imgUrl:'http://www.fabricadecodigo.com/wp-content/uploads/ionic-camera-350x230.png', 
